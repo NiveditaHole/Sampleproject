@@ -21,7 +21,7 @@ public class Demo {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
 
-		driver.get("http://gdr-qa-dashboard.eastus.cloudapp.azure.com");
+		driver.get("http://gdr-qa-dashboard-3-0.eastus.cloudapp.azure.com");
 		System.out.println(driver.getTitle());
 	}
 
