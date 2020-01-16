@@ -5,9 +5,12 @@
     <classes>
       <class name="Example.Users">
         <methods>
-          <include name="InviteUser"/>
-          <include name="setupSuite"/>
-          <include name="TearDown"/>
+          <include name="tearDown"/>
+          <include name="Login"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+          <include name="FilterStatus"/>
+          <include name="FilterRole"/>
         </methods>
       </class> <!-- Example.Users -->
     </classes>

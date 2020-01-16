@@ -9,7 +9,9 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -33,29 +35,24 @@ import org.testng.annotations.Test;
 import Library.UtilitySS;
 import Library.isEmailValid;
 
-public class Users {
-
-	WebDriver driver;
-   ExtentHtmlReporter report;
-	ExtentReports extent;
-   ExtentTest logger;
+public class Users extends ExtendReportDemo {
 
 
-	@BeforeSuite
-    public void setupSuite() {
+	 
+	
+	@BeforeMethod
+    public void Login() 
+	{
 		// extent report
 		
-		//report= new ExtentHtmlReporter(new File("Extent.html"));
-		report = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
-		extent= new ExtentReports();
-		extent.attachReporter(report);
-		ExtentTest logger=extent.createTest("LoginTest" ,"Sample desc");
-		logger.log(Status.INFO, "Started");
-		extent.flush();
-
+	test =reports.createTest("LoginTest");
+	test.log(Status.INFO, "URL link is open");
+	
+    
+	
     System.setProperty("webdriver.chrome.driver","/home/niveditah/Downloads/chrome74/chromedriver");
     driver= new ChromeDriver();
-    WebDriverWait wait= new WebDriverWait(driver, 100);
+   
 
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
@@ -67,27 +64,43 @@ public class Users {
 	driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("Trinesis_123");
 	//login button
 	driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
+	System.out.println("login successfully");
+	}
+	
+	
+	
+	 /*@BeforeClass
+	 
+	 public void UserTab()
+	{
+		
+	WebDriverWait wait= new WebDriverWait(driver, 100);	
 	//user link
 	WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
 	UserLink.click(); 
-	logger.log(Status.INFO, "Title verified");
+	System.out.println("User link open successfully");
 	
 	}
+	
+	*/
     @Test 
-    (enabled=false)
+
 	public void Emailcheck() throws InterruptedException
 	{
     	
     	
-    	ExtentTest logger=extent.createTest("eMAILCHECK" ,"DESC");
-		logger.log(Status.INFO, "Started");
-		extent.flush();
+    	test =reports.createTest("Email validation ");
+    	test.log(Status.INFO, "Checking the email validation ");
+    	WebDriverWait wait= new WebDriverWait(driver, 100);	
+    	//user link
+    	WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
+    	UserLink.click();
 		driver.findElement(By.xpath("//span[@class='invitenewuser']")).click();		
 		Thread.sleep(2000);
-		driver.findElement(By.id("mat-input-5")).sendKeys("jessica@gmail.com");
+		driver.findElement(By.id("mat-input-5")).sendKeys("gfhfghgmail.com");
 	    WebElement targetEmail = driver.findElement(By.id("mat-input-5"));
 	    String getValue = targetEmail.getAttribute("value");
-		System.out.println("email entered " +getValue);
+		System.out.println("email entered :" +getValue);
 		
 		if (isEmailValid.isValid(getValue))
 		{
@@ -119,15 +132,18 @@ public class Users {
 		
 	}
 	*/
-	@Test
-
+	
+    @Test(enabled=false) 
 	public void InviteUser() throws InterruptedException
 	{
-		
-		
+    	
+    	WebDriverWait wait= new WebDriverWait(driver, 100);	
+		//user link
+    	WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
+    	UserLink.click(); 
+
 		//invite user button
 		driver.findElement(By.xpath("//span[@class='invitenewuser']")).click();
-		
 		
 		driver.findElement(By.xpath("//input[@id='mat-input-17']")).sendKeys("Jessica");
 		driver.findElement(By.xpath("//input[@id='mat-input-18']")).sendKeys("H");
@@ -140,7 +156,6 @@ public class Users {
 		String roleselected=selectedrole.getText();
 		System.out.println("role selected is " +roleselected);
 		driver.findElement(By.xpath("//*[contains(text(), ' Save Updates ')]")).click();
-		
 		Thread.sleep(1500);
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		if(driver.getPageSource().contains("User already exist"))
@@ -156,10 +171,7 @@ public class Users {
 			System.out.println("Email id entered is unique");	
 		}
 		
-		ExtentTest logger=extent.createTest("Invite user" ,"Sample desc");
-		logger.log(Status.INFO, "Started");
 		
-		extent.flush();
      	}
 
 
@@ -171,9 +183,14 @@ public class Users {
 		public void FilterAccount() throws InterruptedException
 		{
 			
-			
-		WebDriverWait wait= new WebDriverWait(driver, 100);
-		System.out.println("**Checking filters on account ...");	
+
+	    test =reports.createTest("Filtering check on account");
+	    test.log(Status.INFO, "Checking the Filter in the User ACoount ");	
+	    WebDriverWait wait= new WebDriverWait(driver, 100);	
+	  //user link
+		WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
+		UserLink.click(); 
+
 		//Add filter
 		driver.findElement(By.xpath("//span[@class='invitenewuser']//following::button[3]")).click();	
         //select account from dd
@@ -188,20 +205,22 @@ public class Users {
 		Apply= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Apply')]")));
 		Apply.click();
 		Thread.sleep(3000);
-		UtilitySS.CaptureScreenshots(driver);
+		//UtilitySS.CaptureScreenshots(driver);
 		
-
-    	ExtentTest logger=extent.createTest("Filters accound" ,"DESC");
-		logger.log(Status.INFO, "Started filter on account test");
-		//logger.log(Status., details)
-		extent.flush();
     	}
 		
 		@Test
 	
 		public void FilterRole() throws InterruptedException
 		{
+			
+			test =reports.createTest("Filter modal User");
+		    test.log(Status.INFO, "Checking the Filter on the Role field in the User ");
 			WebDriverWait wait= new WebDriverWait(driver, 100);
+			  //user link
+				WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
+				UserLink.click(); 
+			
 			System.out.println("**Checking filters on Role ...");	
 			//Add filter
 			driver.findElement(By.xpath("//span[@class='invitenewuser']//following::button[3]")).click();	
@@ -217,23 +236,27 @@ public class Users {
 			Apply= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Apply')]")));
 			Apply.click();
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			UtilitySS.CaptureScreenshots(driver);	
+			//UtilitySS.CaptureScreenshots(driver);	
 			//reset
 			driver.findElement(By.xpath("//*[@id=\"Track-Pickup\"]/span")).click();
 
-	    	ExtentTest logger=extent.createTest("Filters accound" ,"DESC");
-			logger.log(Status.INFO, "Started filter on account test");
-			//logger.log(Status., details)
-			extent.flush();
+	    	
 			
 		}
 
-		@Test(enabled=false)
-		
+		@Test
 		public void FilterStatus() throws InterruptedException
 		{
+			test =reports.createTest("Filtering check");
+		    test.log(Status.INFO, "Checking the Filter on the status field in the User ");
 			WebDriverWait wait= new WebDriverWait(driver, 100);
-			System.out.println("**Checking filters on Role ...");	
+			
+				
+			  //user link
+				WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
+				UserLink.click(); 
+				//reset
+				driver.findElement(By.xpath("//*[@id=\"Track-Pickup\"]/span")).click();
 			//Add filter
 			driver.findElement(By.xpath("//span[@class='invitenewuser']//following::button[3]")).click();	
 	        //select role from dd
@@ -242,42 +265,17 @@ public class Users {
 			Thread.sleep(2000);
 			Userstatus.selectByValue("Active");
 			WebElement status=Userstatus.getFirstSelectedOption();
-			String status1=status.getText();
-			System.out.println("Role selected is " +status1);
+			System.out.println("Role selected is " +status);
 			WebElement Apply;
 			Apply= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Apply')]")));
 			Apply.click();
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			UtilitySS.CaptureScreenshots(driver);	
+			//UtilitySS.CaptureScreenshots(driver);	
 			
 
-	    	ExtentTest logger=extent.createTest("Filters accound" ,"DESC");
-			logger.log(Status.INFO, "Started filter on account test");
-			//logger.log(Status., details)
-			extent.flush();
-		}
-		@AfterSuite
-		public void TearDown(ITestResult result) throws IOException
-
-		{
-			if (result.getStatus() == ITestResult.FAILURE) {
-
-				logger.fail("Test failed",
-						MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
-
-			}
-
-			else if (result.getStatus() == ITestResult.SUCCESS) {
-
-				logger.fail("Test Passed",
-						MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
-
-			}
-			report.flush();
-
+	    	
 		}
 		
-	
 	
 }
 

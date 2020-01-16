@@ -1,9 +1,10 @@
-package Example;
+ package Example;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -25,64 +26,60 @@ import Library.UtilitySS;
 
 public class ExtendReportDemo {
 
-	ExtentHtmlReporter report;
-	ExtentReports extent;
-	
-	
-	  
-	
-   WebDriver driver;
-   ExtentTest logger;
+    
+	ExtentHtmlReporter htmlreporter;
+    ExtentReports reports;
+    WebDriver driver;
+    ExtentTest test;
 
 
-	@BeforeMethod
-    public void setupSuite() {
+	@BeforeSuite
+    public void setup() {
 		// extent report
+		htmlreporter = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
+		reports= new ExtentReports();
+		reports.attachReporter(htmlreporter);
 		
-		//report= new ExtentHtmlReporter(new File("Extent.html"));
-		report = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
-		extent= new ExtentReports();
-		extent.attachReporter(report);
-		ExtentTest logger=extent.createTest("LoginTest" ,"Sample desc");
-		logger.log(Status.INFO, "Started");
-		extent.flush();
-	}
-	@Test
-	public void loginTest() throws IOException
-      
-	{  
-		System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome74/chromedriver");
-		driver=new ChromeDriver();
 		
-		driver.get("http://gdr-qa-dashboard-3-0.eastus.cloudapp.azure.com");
-		System.out.println(driver.getTitle());
-		logger.log(Status.INFO, "Title verified");
-		 
+	
 	}
-	
-	
+
 
   
-	@AfterSuite
-	public void TearDown(ITestResult result) throws IOException
+	@AfterMethod
+	public void getResult(ITestResult result) throws IOException
 
 	{
 		if (result.getStatus() == ITestResult.FAILURE) {
 
-			logger.fail("Test failed",
+			test.fail("Test Failed",
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
+			test.fail(result.getThrowable());
 
 		}
 
 		else if (result.getStatus() == ITestResult.SUCCESS) {
 
-			logger.fail("Test Passed",
+			test.pass("Test Passed",
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
 
 		}
-		report.flush();
+		else if (result.getStatus() == ITestResult.SKIP) {
+
+			test.skip("Test Skipped",
+					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
+			test.skip(result.getThrowable());
+
+		}
+	}
+	@AfterSuite
+	public void tearDown()
+	{
+		
+		reports.flush();
 
 	}
+	
 	
 	
 	
