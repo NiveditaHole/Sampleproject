@@ -29,13 +29,13 @@ public class LoginFunctionality extends ExtendReportDemo{
 	test.log(Status.INFO, "URL link is open");
 	
 	
-	System.setProperty("webdriver.chrome.driver","/home/niveditah/Downloads/chrome74/chromedriver");
+	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
     driver= new ChromeDriver();
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
     driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
     //url 
-    driver.get("http://gdr-dev-dashboard-3-0.eastus.cloudapp.azure.com");	
+    driver.get("http://gdr-qa-dashboard-3-0.eastus.cloudapp.azure.com");	
 	
 	
     

@@ -51,7 +51,7 @@ public class Users extends ExtendReportDemo {
 	
     
 	
-    System.setProperty("webdriver.chrome.driver","/home/niveditah/Downloads/chrome74/chromedriver");
+    System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
     driver= new ChromeDriver();
    
 
