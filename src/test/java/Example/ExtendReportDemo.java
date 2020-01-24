@@ -1,5 +1,7 @@
  package Example;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.Assert;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -68,10 +70,11 @@ public class ExtendReportDemo {
 
 			test.skip("Test Skipped",
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
-			test.skip(result.getThrowable());
+			//test.skip(result.getThrowable());
 
 		}
 	}
+
 	@AfterSuite
 	public void tearDown()
 	{

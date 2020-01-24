@@ -9,7 +9,6 @@
           <include name="Login"/>
           <include name="setup"/>
           <include name="getResult"/>
-          <include name="FilterStatus"/>
           <include name="FilterRole"/>
         </methods>
       </class> <!-- Example.Users -->

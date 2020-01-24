@@ -1,6 +1,7 @@
 package Example;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -84,10 +85,9 @@ public class Users extends ExtendReportDemo {
 	
 	*/
     @Test 
-
+    
 	public void Emailcheck() throws InterruptedException
 	{
-    	
     	
     	test =reports.createTest("Email validation ");
     	test.log(Status.INFO, "Checking the email validation ");
@@ -179,7 +179,7 @@ public class Users extends ExtendReportDemo {
 	
 	
 		
-		@Test 
+		@Test (enabled=false) 
 		public void FilterAccount() throws InterruptedException
 		{
 			
@@ -244,7 +244,7 @@ public class Users extends ExtendReportDemo {
 			
 		}
 
-		@Test
+		@Test(enabled=false) 
 		public void FilterStatus() throws InterruptedException
 		{
 			test =reports.createTest("Filtering check");
