@@ -38,7 +38,8 @@ public class ExtendReportDemo {
 	@BeforeSuite
     public void setup() {
 		// extent report
-		htmlreporter = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
+		htmlreporter = new ExtentHtmlReporter(new File("./Reports/Test.html"));
+		//htmlreporter = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
 		reports= new ExtentReports();
 		reports.attachReporter(htmlreporter);
 		
