@@ -5,12 +5,10 @@
     <classes>
       <class name="Example.LoginFunctionality">
         <methods>
-          <include name="LoginwithValidData"/>
           <include name="tearDown"/>
           <include name="CheckValidEmailId"/>
           <include name="setup"/>
           <include name="getResult"/>
-          <include name="LoginEmailID"/>
           <include name="Login"/>
           <include name="LoginBlankdata"/>
         </methods>

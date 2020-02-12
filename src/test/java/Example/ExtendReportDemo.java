@@ -33,16 +33,15 @@ public class ExtendReportDemo {
     ExtentReports reports;
     WebDriver driver;
     ExtentTest test;
-
+ 
 
 	@BeforeSuite
     public void setup() {
 		// extent report
-		htmlreporter = new ExtentHtmlReporter(new File("/Reports/Test.html"));
+		htmlreporter = new ExtentHtmlReporter(new File("./Reports/Test.html"));
 		//htmlreporter = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
 		reports= new ExtentReports();
 		reports.attachReporter(htmlreporter);
-		
 		
 	
 	}
@@ -75,12 +74,14 @@ public class ExtendReportDemo {
 
 		}
 	}
+   
 
 	@AfterSuite
 	public void tearDown()
 	{
 		
 		reports.flush();
+		driver.quit();
 
 	}
 	

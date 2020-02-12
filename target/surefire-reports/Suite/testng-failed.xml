@@ -3,12 +3,15 @@
 <suite parallel="none" name="Failed suite [Suite]" verbose="0">
   <test parallel="none" name="Test(failed)">
     <classes>
-      <class name="Example.Users">
+      <class name="Example.LoginFunctionality">
         <methods>
-          <include name="setUp"/>
-          <include name="FilterStatus"/>
+          <include name="CheckValidEmailId"/>
+          <include name="setup"/>
+          <include name="CheckInvalidEmailId"/>
+          <include name="Login"/>
+          <include name="LoginBlankdata"/>
         </methods>
-      </class> <!-- Example.Users -->
+      </class> <!-- Example.LoginFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Suite]" verbose="0">
-  <test parallel="none" name="Test(failed)">
+<suite parallel="none" name="Failed suite [TestNG]" verbose="0">
+  <test parallel="none" name="TestNG(failed)">
     <classes>
-      <class name="Example.Users">
+      <class name="Example.LoginFunctionality">
         <methods>
-          <include name="setUp"/>
-          <include name="FilterStatus"/>
+          <include name="LoginwithValidData"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+          <include name="LoginEmailID"/>
+          <include name="Login"/>
+          <include name="LoginBlankdata"/>
         </methods>
-      </class> <!-- Example.Users -->
+      </class> <!-- Example.LoginFunctionality -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- TestNG(failed) -->
+</suite> <!-- Failed suite [TestNG] -->
