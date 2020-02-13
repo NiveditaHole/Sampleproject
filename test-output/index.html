@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestNG" class="navigator-link">
-              <span class="suite-name border-passed">TestNG</span>
+              <span class="suite-name border-failed">TestNG</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNG" class="hide-methods failed suite-TestNG"> (hide)</a> <!-- hide-methods failed suite-TestNG -->
+                      <a href="#" panel-name="suite-TestNG" class="show-methods failed suite-TestNG"> (show)</a> <!-- show-methods failed suite-TestNG -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNG">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginBlankdata">LoginBlankdata</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNG -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,11 +122,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="CheckValidEmailId">CheckValidEmailId</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginBlankdata">LoginBlankdata</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +146,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestNG" class="panel TestNG">
+          <div class="suite-TestNG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Example.LoginFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginBlankdata">
+                  </a> <!-- LoginBlankdata -->
+                  <span class="method-name">LoginBlankdata</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Login] but found [Google Search]
+	at Example.LoginFunctionality.LoginBlankdata(LoginFunctionality.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG-class-failed -->
           <div class="suite-TestNG-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -155,13 +184,6 @@
                   <a name="CheckValidEmailId">
                   </a> <!-- CheckValidEmailId -->
                   <span class="method-name">CheckValidEmailId</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginBlankdata">
-                  </a> <!-- LoginBlankdata -->
-                  <span class="method-name">LoginBlankdata</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -239,23 +261,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginEmailID')
 data.setCell(0, 2, 'Example.LoginFunctionality')
-data.setCell(0, 3, 1021);
+data.setCell(0, 3, 999);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginwithValidData')
 data.setCell(1, 2, 'Example.LoginFunctionality')
-data.setCell(1, 3, 532);
+data.setCell(1, 3, 543);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'CheckInvalidEmailId')
 data.setCell(2, 2, 'Example.LoginFunctionality')
-data.setCell(2, 3, 242);
+data.setCell(2, 3, 233);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'CheckValidEmailId')
 data.setCell(3, 2, 'Example.LoginFunctionality')
-data.setCell(3, 3, 237);
+data.setCell(3, 3, 208);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'LoginBlankdata')
 data.setCell(4, 2, 'Example.LoginFunctionality')
-data.setCell(4, 3, 129);
+data.setCell(4, 3, 148);
 window.suiteTableData['TestNG']= { tableData: data, tableDiv: 'times-div-TestNG'}
 return data;
 }
@@ -293,67 +315,69 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">188 ms</span>
+                <span class="method-start">178 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckInvalidEmailId</span>
-                <span class="method-start">9691 ms</span>
+                <span class="method-start">10568 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=CheckInvalidEmailId status=SUCCESS method=LoginFunctionality.CheckInvalidEmailId()[...)</span>
-                <span class="method-start">9936 ms</span>
+                <span class="method-start">10804 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">10610 ms</span>
+                <span class="method-start">11467 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckValidEmailId</span>
-                <span class="method-start">20329 ms</span>
+                <span class="method-start">22081 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=CheckValidEmailId status=SUCCESS method=LoginFunctionality.CheckValidEmailId()[pri:...)</span>
-                <span class="method-start">20567 ms</span>
+                <span class="method-start">22291 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">21218 ms</span>
+                <span class="method-start">22915 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">LoginBlankdata</span>
-                <span class="method-start">33575 ms</span>
+                <span class="method-start">32290 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=LoginBlankdata status=SUCCESS method=LoginFunctionality.LoginBlankdata()[pri:0, ins...)</span>
-                <span class="method-start">33706 ms</span>
+                <span class="method-name">getResult([TestResult name=LoginBlankdata status=FAILURE method=LoginFunctionality.LoginBlankdata()[pri:0, ins...)</span>
+                <span class="method-start">32441 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">34385 ms</span>
+                <span class="method-start">33084 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginEmailID</span>
-                <span class="method-start">51127 ms</span>
+                <span class="method-start">42447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=LoginEmailID status=SUCCESS method=LoginFunctionality.LoginEmailID()[pri:0, instanc...)</span>
-                <span class="method-start">52149 ms</span>
+                <span class="method-start">43448 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">52855 ms</span>
+                <span class="method-start">44085 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginwithValidData</span>
-                <span class="method-start">61761 ms</span>
+                <span class="method-start">53278 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=LoginwithValidData status=SUCCESS method=LoginFunctionality.LoginwithValidData()[pr...)</span>
-                <span class="method-start">62296 ms</span>
+                <span class="method-start">53822 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">63005 ms</span>
+                <span class="method-start">54548 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
