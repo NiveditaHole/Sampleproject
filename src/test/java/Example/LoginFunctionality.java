@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -27,7 +28,10 @@ public class LoginFunctionality extends ExtendReportDemo   {
    public void Login() 
 	{
 	System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
-    driver= new ChromeDriver();
+	ChromeOptions option=new ChromeOptions();
+	option.setHeadless(true);
+    driver= new ChromeDriver(option);
+    
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
     driver.manage().timeouts().pageLoadTimeout(200, TimeUnit.SECONDS);
