@@ -57,6 +57,7 @@ public class ExtendReportDemo {
 			test.fail("Test Failed",
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
 			test.fail(result.getThrowable());
+			driver.close();
 
 		}
 
@@ -64,12 +65,14 @@ public class ExtendReportDemo {
 
 			test.pass("Test Passed",
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
+			driver.close();
 
 		}
 		else if (result.getStatus() == ITestResult.SKIP) {
 
 			test.skip("Test Skipped",
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
+	
 			//test.skip(result.getThrowable());
 
 		}
@@ -81,7 +84,8 @@ public class ExtendReportDemo {
 	{
 		
 		reports.flush();
-		driver.quit();
+	
+		//driver.quit();
 
 	}
 	

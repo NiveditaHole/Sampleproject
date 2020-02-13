@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestNG" class="navigator-link">
-              <span class="suite-name border-failed">TestNG</span>
+              <span class="suite-name border-passed">TestNG</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,45 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestNG" class="hide-methods failed suite-TestNG"> (hide)</a> <!-- hide-methods failed suite-TestNG -->
-                      <a href="#" panel-name="suite-TestNG" class="show-methods failed suite-TestNG"> (show)</a> <!-- show-methods failed suite-TestNG -->
-                    </span>
-                    <div class="method-list-content failed suite-TestNG">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="CheckValidEmailId">CheckValidEmailId</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TestNG -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-TestNG" class="hide-methods skipped suite-TestNG"> (hide)</a> <!-- hide-methods skipped suite-TestNG -->
-                      <a href="#" panel-name="suite-TestNG" class="show-methods skipped suite-TestNG"> (show)</a> <!-- show-methods skipped suite-TestNG -->
-                    </span>
-                    <div class="method-list-content skipped suite-TestNG">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginBlankdata">LoginBlankdata</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginEmailID">LoginEmailID</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginwithValidData">LoginwithValidData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-TestNG -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,6 +103,26 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="CheckInvalidEmailId">CheckInvalidEmailId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="CheckValidEmailId">CheckValidEmailId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginBlankdata">LoginBlankdata</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginEmailID">LoginEmailID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginwithValidData">LoginwithValidData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestNG -->
@@ -155,136 +137,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestNG" class="panel TestNG">
-          <div class="suite-TestNG-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Example.LoginFunctionality</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CheckValidEmailId">
-                  </a> <!-- CheckValidEmailId -->
-                  <span class="method-name">CheckValidEmailId</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.87)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-76-generic&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.Gpzxlb}, goog:chromeOptions: {debuggerAddress: localhost:37479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 96b1522eca44dcfe3ab10bcb25e2da4c
-*** Element info: {Using=xpath, value=//*[@id=&quot;emailadd&quot;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Example.LoginFunctionality.CheckValidEmailId(LoginFunctionality.java:87)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG-class-failed -->
-          <div class="suite-TestNG-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">Example.LoginFunctionality</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginBlankdata">
-                  </a> <!-- LoginBlankdata -->
-                  <span class="method-name">LoginBlankdata</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.87)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-76-generic&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.Gpzxlb}, goog:chromeOptions: {debuggerAddress: localhost:37479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 96b1522eca44dcfe3ab10bcb25e2da4c
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at Library.UtilitySS.CaptureScreenshots(UtilitySS.java:22)
-	at Example.ExtendReportDemo.getResult(ExtendReportDemo.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginEmailID">
-                  </a> <!-- LoginEmailID -->
-                  <span class="method-name">LoginEmailID</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.87)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-76-generic&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.Gpzxlb}, goog:chromeOptions: {debuggerAddress: localhost:37479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 96b1522eca44dcfe3ab10bcb25e2da4c
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at Library.UtilitySS.CaptureScreenshots(UtilitySS.java:22)
-	at Example.ExtendReportDemo.getResult(ExtendReportDemo.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginwithValidData">
-                  </a> <!-- LoginwithValidData -->
-                  <span class="method-name">LoginwithValidData</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.87)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-76-generic&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.Gpzxlb}, goog:chromeOptions: {debuggerAddress: localhost:37479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 96b1522eca44dcfe3ab10bcb25e2da4c
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at Library.UtilitySS.CaptureScreenshots(UtilitySS.java:22)
-	at Example.ExtendReportDemo.getResult(ExtendReportDemo.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG-class-skipped -->
           <div class="suite-TestNG-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -296,6 +148,34 @@ Session ID: 96b1522eca44dcfe3ab10bcb25e2da4c
                   <a name="CheckInvalidEmailId">
                   </a> <!-- CheckInvalidEmailId -->
                   <span class="method-name">CheckInvalidEmailId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckValidEmailId">
+                  </a> <!-- CheckValidEmailId -->
+                  <span class="method-name">CheckValidEmailId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginBlankdata">
+                  </a> <!-- LoginBlankdata -->
+                  <span class="method-name">LoginBlankdata</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginEmailID">
+                  </a> <!-- LoginEmailID -->
+                  <span class="method-name">LoginEmailID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginwithValidData">
+                  </a> <!-- LoginwithValidData -->
+                  <span class="method-name">LoginwithValidData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -310,6 +190,9 @@ Session ID: 96b1522eca44dcfe3ab10bcb25e2da4c
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestNG&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestNG&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Example.LoginFunctionality&quot;/&gt;
@@ -354,30 +237,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CheckInvalidEmailId')
+data.setCell(0, 1, 'LoginEmailID')
 data.setCell(0, 2, 'Example.LoginFunctionality')
-data.setCell(0, 3, 312);
+data.setCell(0, 3, 1021);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CheckValidEmailId')
+data.setCell(1, 1, 'LoginwithValidData')
 data.setCell(1, 2, 'Example.LoginFunctionality')
-data.setCell(1, 3, 52);
+data.setCell(1, 3, 532);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginBlankdata')
+data.setCell(2, 1, 'CheckInvalidEmailId')
 data.setCell(2, 2, 'Example.LoginFunctionality')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 242);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginEmailID')
+data.setCell(3, 1, 'CheckValidEmailId')
 data.setCell(3, 2, 'Example.LoginFunctionality')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 237);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LoginwithValidData')
+data.setCell(4, 1, 'LoginBlankdata')
 data.setCell(4, 2, 'Example.LoginFunctionality')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 129);
 window.suiteTableData['TestNG']= { tableData: data, tableDiv: 'times-div-TestNG'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 364 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-TestNG">
               </div> <!-- times-div-TestNG -->
             </div> <!-- times-div -->
@@ -410,71 +293,67 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">210 ms</span>
+                <span class="method-start">188 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckInvalidEmailId</span>
-                <span class="method-start">10035 ms</span>
+                <span class="method-start">9691 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=CheckInvalidEmailId status=SUCCESS method=LoginFunctionality.CheckInvalidEmailId()[...)</span>
-                <span class="method-start">10350 ms</span>
+                <span class="method-start">9936 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">11007 ms</span>
+                <span class="method-start">10610 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">CheckValidEmailId</span>
-                <span class="method-start">14130 ms</span>
+                <span class="method-start">20329 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getResult([TestResult name=CheckValidEmailId status=FAILURE method=LoginFunctionality.CheckValidEmailId()[pri:...)</span>
-                <span class="method-start">14202 ms</span>
+                <span class="method-name">getResult([TestResult name=CheckValidEmailId status=SUCCESS method=LoginFunctionality.CheckValidEmailId()[pri:...)</span>
+                <span class="method-start">20567 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">14228 ms</span>
+                <span class="method-start">21218 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginBlankdata</span>
-                <span class="method-start">14230 ms</span>
+                <span class="method-start">33575 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult</span>
-                <span class="method-start">14235 ms</span>
+                <span class="method-name">getResult([TestResult name=LoginBlankdata status=SUCCESS method=LoginFunctionality.LoginBlankdata()[pri:0, ins...)</span>
+                <span class="method-start">33706 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">14237 ms</span>
+                <span class="method-start">34385 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginEmailID</span>
-                <span class="method-start">14239 ms</span>
+                <span class="method-start">51127 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult</span>
-                <span class="method-start">14243 ms</span>
+                <span class="method-name">getResult([TestResult name=LoginEmailID status=SUCCESS method=LoginFunctionality.LoginEmailID()[pri:0, instanc...)</span>
+                <span class="method-start">52149 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">14245 ms</span>
+                <span class="method-start">52855 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginwithValidData</span>
-                <span class="method-start">14246 ms</span>
+                <span class="method-start">61761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult</span>
-                <span class="method-start">14250 ms</span>
+                <span class="method-name">getResult([TestResult name=LoginwithValidData status=SUCCESS method=LoginFunctionality.LoginwithValidData()[pr...)</span>
+                <span class="method-start">62296 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14307 ms</span>
+                <span class="method-start">63005 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

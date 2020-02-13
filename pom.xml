@@ -40,6 +40,21 @@
 						<!-- TestNG suite XML files -->
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+
+					<properties>
+						<property>
+							<name>userdefaultlistners</name>
+							<value>false</value>
+						</property>
+
+
+						<property>
+							<name>Listner</name>
+							<value> org.upcommons.reportng.HTMLReporter,
+								org.upcommons.reportng.JunitXMLReporter
+							</value>
+						</property>
+					</properties>
 				</configuration>
 			</plugin>
 
@@ -76,19 +91,29 @@
 			<artifactId>extentreports</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-   
-    <!-- reporting -->
-    
-    <dependency>
-    <groupId>org.uncommons</groupId>
-    <artifactId>reportng</artifactId>
-    <version>1.1.4</version>
-    <scope>test</scope>
-    </dependency>
-    
-  
-    
-     
+
+		<!-- reporti ng for another form of report- will required 3 depe -->
+
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>velocity</groupId>
+			<artifactId>velocity-dep</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+
+
+
 
 		<!-- Junit dependecies -->
 		<dependency>

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [TestNG]" verbose="0">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
   <test parallel="none" name="TestNG(failed)">
     <classes>
       <class name="Example.LoginFunctionality">
         <methods>
-          <include name="LoginwithValidData"/>
+          <include name="tearDown"/>
           <include name="setup"/>
           <include name="getResult"/>
-          <include name="LoginEmailID"/>
           <include name="Login"/>
           <include name="LoginBlankdata"/>
         </methods>

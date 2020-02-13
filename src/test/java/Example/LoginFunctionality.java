@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -29,7 +30,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
     driver= new ChromeDriver();
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
-    driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+    driver.manage().timeouts().pageLoadTimeout(200, TimeUnit.SECONDS);
     //url 
     driver.get("https://qa-portal.goodr.co");	
 	
@@ -45,13 +46,21 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	
 	//login button
 		driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
+		//to find the text is present when login button entered
+		WebElement validationALert = driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button"));
+		String string = validationALert.getText();
+		System.out.println(string);
+		
+	 
+	 /*     //My Account will be clicked only if the above condition is true
 	 if(driver.getPageSource().contains("Please enter fields"))
 	 {
 	System.out.println("validation is present for login button with empty username and password");	 
 	 }
+	 */
+    
+	
     }
-	
-	
 	@Test
 	public void CheckInvalidEmailId() throws InterruptedException
 	{
@@ -60,7 +69,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
     	test.log(Status.INFO, "Checking the email validation ");
     	 driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("gfhfghgmail.com");
 	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
-	    driver.manage().timeouts().pageLoadTimeout(500, TimeUnit.SECONDS);
+	   
 	   
 	    String getValue = targetEmail.getAttribute("value");
 		System.out.println("email entered is :" +getValue);
@@ -75,6 +84,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	        {       System.out.print("email is not valid"); 
 		
 	        }
+	
 		
    	}
 	@Test
@@ -100,6 +110,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	        {       System.out.print("email is not valid"); 
 		
 	        }
+
 	}
 	
 	@Test
@@ -115,6 +126,8 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	 {
 	System.out.println("validation is present for Empty userNAME");	 
 	 }
+	 
+	 
     }
 	
 	@Test
