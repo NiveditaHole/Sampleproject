@@ -34,7 +34,6 @@ public class LoginFunctionality extends ExtendReportDemo   {
     //url 
     driver.get("https://qa-portal.goodr.co");	
 	
-	
     
 	}
 	@Test
@@ -60,6 +59,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
     
 	
     }
+	/*
 	@Test
 	public void CheckInvalidEmailId() throws InterruptedException
 	{
@@ -83,9 +83,10 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	        {       System.out.print("email is not valid"); 
 		
 	        }
-	
+
 		
    	}
+   	*/
 	@Test
 	public void CheckValidEmailId() throws InterruptedException
 	{
