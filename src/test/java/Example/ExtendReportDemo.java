@@ -18,32 +18,27 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import Library.UtilitySS;
 
 public class ExtendReportDemo {
 
     
-	ExtentHtmlReporter htmlreporter;
+	
     ExtentReports reports;
     WebDriver driver;
-    ExtentTest test;
+    ExtentTest logger;
  
 
 	@BeforeSuite
     public void setup() {
 		// extent report
-		htmlreporter = new ExtentHtmlReporter(new File("./Reports/Test.html"));
+		reports = new ExtentReports("./Reports/Test.html");
 		//htmlreporter = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
-		reports= new ExtentReports();
-		reports.attachReporter(htmlreporter);
 		
-	
 	}
 
 
@@ -53,26 +48,32 @@ public class ExtendReportDemo {
 
 	{
 		if (result.getStatus() == ITestResult.FAILURE) {
-
+            
+			/*
 			test.fail("Test Failed",
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
 			test.fail(result.getThrowable());
+			*/
+			String screenshotpath=UtilitySS.CaptureScreenshots(driver);
+			String image= logger.addScreenCapture(screenshotpath);
+			
+			logger.log(LogStatus.FAIL, "Test cases fail", image);
+
 			driver.close();
 
 		}
 
 		else if (result.getStatus() == ITestResult.SUCCESS) {
 
-			test.pass("Test Passed",
-					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
+			String screenshotpath=UtilitySS.CaptureScreenshots(driver);
+			logger.log(LogStatus.PASS, "Test cases Pass", screenshotpath);
+
 			driver.close();
 
 		}
 		else if (result.getStatus() == ITestResult.SKIP) {
-
-			test.skip("Test Skipped",
-					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
-	
+ 
+			
 			//test.skip(result.getThrowable());
 
 		}

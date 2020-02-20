@@ -83,16 +83,18 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- TestNG Extend html report dependecies -->
-
+		<!-- TestNG Extend html report dependencies <dependency> <groupId>com.aventstack</groupId> 
+			<artifactId>extentreports</artifactId> <version>4.0.0</version> </dependency> 
+			Commemnting aventstack and adding relevant code dependency for extent report -->
 
 		<dependency>
-			<groupId>com.aventstack</groupId>
+			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>4.0.0</version>
+			<version>2.05</version>
 		</dependency>
 
-		<!-- reporti ng for another form of report- will required 3 depe -->
+
+		<!-- report ng for another form of report- will required 3 dependency -->
 
 		<dependency>
 			<groupId>org.uncommons</groupId>

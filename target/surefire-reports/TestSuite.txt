@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 64.894 s <<< FAILURE! - in TestSuite
-LoginBlankdata(Example.LoginFunctionality)  Time elapsed: 0.131 s  <<< FAILURE!
-java.lang.AssertionError: expected [Login] but found [Google Search]
-	at Example.LoginFunctionality.LoginBlankdata(LoginFunctionality.java:53)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.42 s - in TestSuite

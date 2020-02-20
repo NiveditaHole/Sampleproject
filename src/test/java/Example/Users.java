@@ -1,13 +1,9 @@
 package Example;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -46,8 +42,8 @@ public class Users extends ExtendReportDemo {
 	{
 		// extent report
 		
-	test =reports.createTest("LoginTest");
-	test.log(Status.INFO, "URL link is open");
+	//test =reports.createTest("LoginTest");
+	//test.log(Status.INFO, "URL link is open");
 	
     
 	
@@ -88,7 +84,7 @@ public class Users extends ExtendReportDemo {
     
 	public void Emailcheck() throws InterruptedException
 	{
-    	
+    	/*
     	test =reports.createTest("Email validation ");
     	test.log(Status.INFO, "Checking the email validation ");
     	WebDriverWait wait= new WebDriverWait(driver, 100);	
@@ -114,6 +110,7 @@ public class Users extends ExtendReportDemo {
 	        }
 		
 		
+		*/
     }
 	
     /*
@@ -184,8 +181,7 @@ public class Users extends ExtendReportDemo {
 		{
 			
 
-	    test =reports.createTest("Filtering check on account");
-	    test.log(Status.INFO, "Checking the Filter in the User ACoount ");	
+	   
 	    WebDriverWait wait= new WebDriverWait(driver, 100);	
 	  //user link
 		WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
@@ -214,8 +210,6 @@ public class Users extends ExtendReportDemo {
 		public void FilterRole() throws InterruptedException
 		{
 			
-			test =reports.createTest("Filter modal User");
-		    test.log(Status.INFO, "Checking the Filter on the Role field in the User ");
 			WebDriverWait wait= new WebDriverWait(driver, 100);
 			  //user link
 				WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
@@ -247,8 +241,7 @@ public class Users extends ExtendReportDemo {
 		@Test(enabled=false) 
 		public void FilterStatus() throws InterruptedException
 		{
-			test =reports.createTest("Filtering check");
-		    test.log(Status.INFO, "Checking the Filter on the status field in the User ");
+			
 			WebDriverWait wait= new WebDriverWait(driver, 100);
 			
 				
