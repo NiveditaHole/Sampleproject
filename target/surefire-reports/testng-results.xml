@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="5" passed="5" failed="0" skipped="0">
+<testng-results total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-27T12:11:52Z" name="TestNG" finished-at="2020-02-27T12:12:48Z" duration-ms="55721">
+  <suite started-at="2020-02-27T14:48:45Z" name="TestNG" finished-at="2020-02-27T14:49:40Z" duration-ms="54592">
     <groups>
     </groups>
-    <test started-at="2020-02-27T12:11:52Z" name="TestNG" finished-at="2020-02-27T12:12:48Z" duration-ms="55721">
+    <test started-at="2020-02-27T14:48:45Z" name="TestNG" finished-at="2020-02-27T14:49:40Z" duration-ms="54592">
       <class name="Example.LoginFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:41:52Z" name="setup" finished-at="2020-02-27T17:41:52Z" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:18:45Z" name="setup" finished-at="2020-02-27T20:18:45Z" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:41:52Z" name="Login" finished-at="2020-02-27T17:42:02Z" duration-ms="10214" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:18:45Z" name="Login" finished-at="2020-02-27T20:18:55Z" duration-ms="10054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CheckInvalidEmailId()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:02Z" name="CheckInvalidEmailId" finished-at="2020-02-27T17:42:03Z" duration-ms="218" status="PASS">
+        <test-method signature="CheckInvalidEmailId()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:18:55Z" name="CheckInvalidEmailId" finished-at="2020-02-27T20:18:56Z" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckInvalidEmailId -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:03Z" name="getResult" finished-at="2020-02-27T17:42:04Z" duration-ms="941" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:18:56Z" name="getResult" finished-at="2020-02-27T20:18:57Z" duration-ms="876" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,34 +30,102 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:04Z" name="Login" finished-at="2020-02-27T17:42:13Z" duration-ms="9770" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:18:57Z" name="Login" finished-at="2020-02-27T20:19:07Z" duration-ms="10143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CheckValidEmailId()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:13Z" name="CheckValidEmailId" finished-at="2020-02-27T17:42:14Z" duration-ms="205" status="PASS">
+        <test-method signature="CheckValidEmailId()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:07Z" name="CheckValidEmailId" finished-at="2020-02-27T20:19:07Z" duration-ms="39" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emaadd"]"}
+  (Session info: chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.D4DLBX}, goog:chromeOptions: {debuggerAddress: localhost:43615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6cabd7ea6c6d9f035c86bec373605496
+*** Element info: {Using=xpath, value=//*[@id="emaadd"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emaadd"]"}
+  (Session info: chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.D4DLBX}, goog:chromeOptions: {debuggerAddress: localhost:43615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6cabd7ea6c6d9f035c86bec373605496
+*** Element info: {Using=xpath, value=//*[@id="emaadd"]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Example.LoginFunctionality.CheckValidEmailId(LoginFunctionality.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckValidEmailId -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:14Z" name="getResult" finished-at="2020-02-27T17:42:14Z" duration-ms="670" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:07Z" name="getResult" finished-at="2020-02-27T20:19:07Z" duration-ms="676" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckValidEmailId status=SUCCESS method=LoginFunctionality.CheckValidEmailId()[pri:0, instance:Example.LoginFunctionality@75d3a5e0] output={null}]]]>
+                <![CDATA[[TestResult name=CheckValidEmailId status=FAILURE method=LoginFunctionality.CheckValidEmailId()[pri:0, instance:Example.LoginFunctionality@75d3a5e0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:14Z" name="Login" finished-at="2020-02-27T17:42:24Z" duration-ms="9305" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:07Z" name="Login" finished-at="2020-02-27T20:19:17Z" duration-ms="9519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="LoginBlankUsername()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:24Z" name="LoginBlankUsername" finished-at="2020-02-27T17:42:24Z" duration-ms="948" status="PASS">
+        <test-method signature="LoginBlankUsername()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:17Z" name="LoginBlankUsername" finished-at="2020-02-27T20:19:18Z" duration-ms="902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginBlankUsername -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:24Z" name="getResult" finished-at="2020-02-27T17:42:25Z" duration-ms="659" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:18Z" name="getResult" finished-at="2020-02-27T20:19:19Z" duration-ms="674" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,15 +136,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:25Z" name="Login" finished-at="2020-02-27T17:42:37Z" duration-ms="11411" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:19Z" name="Login" finished-at="2020-02-27T20:19:29Z" duration-ms="10040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="LoginBlankdata()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:37Z" name="LoginBlankdata" finished-at="2020-02-27T17:42:37Z" duration-ms="123" status="PASS">
+        <test-method signature="LoginBlankdata()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:29Z" name="LoginBlankdata" finished-at="2020-02-27T20:19:29Z" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginBlankdata -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:37Z" name="getResult" finished-at="2020-02-27T17:42:37Z" duration-ms="668" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:29Z" name="getResult" finished-at="2020-02-27T20:19:29Z" duration-ms="716" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,15 +155,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:37Z" name="Login" finished-at="2020-02-27T17:42:47Z" duration-ms="9277" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:29Z" name="Login" finished-at="2020-02-27T20:19:39Z" duration-ms="9321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="LoginwithValidData()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:47Z" name="LoginwithValidData" finished-at="2020-02-27T17:42:47Z" duration-ms="491" status="PASS">
+        <test-method signature="LoginwithValidData()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:39Z" name="LoginwithValidData" finished-at="2020-02-27T20:19:39Z" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginwithValidData -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:47Z" name="getResult" finished-at="2020-02-27T17:42:48Z" duration-ms="809" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:39Z" name="getResult" finished-at="2020-02-27T20:19:40Z" duration-ms="694" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +174,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T17:42:48Z" name="tearDown" finished-at="2020-02-27T17:42:48Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Example.LoginFunctionality@75d3a5e0]" started-at="2020-02-27T20:19:40Z" name="tearDown" finished-at="2020-02-27T20:19:40Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

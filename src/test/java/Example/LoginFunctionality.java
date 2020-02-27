@@ -105,6 +105,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
        
 		logger=reports.startTest("CheckValidEmailId");
 		logger.log(LogStatus.INFO, "Test cases started for checking valid email id");  
+		//driver.findElement(By.xpath("//*[@id=\"emaadd\"]")).sendKeys("abc@gmail.com");
     	driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("abc@gmail.com");
 	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
 	    String getValue = targetEmail.getAttribute("value");

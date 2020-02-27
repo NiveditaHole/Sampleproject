@@ -9,9 +9,9 @@
       <class name="Example.LoginFunctionality">
         <methods>
           <include name="tearDown"/>
+          <include name="CheckValidEmailId"/>
           <include name="setup"/>
           <include name="getResult"/>
-          <include name="CheckInvalidEmailId"/>
           <include name="Login"/>
         </methods>
       </class> <!-- Example.LoginFunctionality -->

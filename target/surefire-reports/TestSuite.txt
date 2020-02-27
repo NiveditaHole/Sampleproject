@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.931 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.792 s <<< FAILURE! - in TestSuite
+CheckValidEmailId(Example.LoginFunctionality)  Time elapsed: 0.048 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emaadd"]"}
+  (Session info: chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.D4DLBX}, goog:chromeOptions: {debuggerAddress: localhost:43615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6cabd7ea6c6d9f035c86bec373605496
+*** Element info: {Using=xpath, value=//*[@id="emaadd"]}
+	at Example.LoginFunctionality.CheckValidEmailId(LoginFunctionality.java:108)
+
