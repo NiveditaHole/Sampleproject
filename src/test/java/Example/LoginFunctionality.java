@@ -51,7 +51,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
     {
 		
 		
-        logger=reports.startTest("Login validation with blank data");
+        logger=reports.startTest("LoginBlankdata");
         logger.log(LogStatus.INFO, "Test cases started");   
 	   //login button
 		driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
@@ -76,10 +76,10 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	public void CheckInvalidEmailId() throws InterruptedException
 	{
 
-		 logger=reports.startTest("Login validation with email id data");
-		
+		 logger=reports.startTest("CheckInvalidEmailId");
+		  logger.log(LogStatus.INFO, "Test cases started for checking Invalid email id");  
     	driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("gfhfghgmail.com");
-	    WebElement targetEmail = driver.findElement(By.xpath("//*[@d=\"emailadd\"]"));
+	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
 	   
 	   
 	    String getValue = targetEmail.getAttribute("value");
@@ -103,7 +103,8 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	public void CheckValidEmailId() throws InterruptedException
 	{
        
-		logger=reports.startTest("Login validation with Valid email id  data");
+		logger=reports.startTest("CheckValidEmailId");
+		logger.log(LogStatus.INFO, "Test cases started for checking valid email id");  
     	driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("abc@gmail.com");
 	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
 	    String getValue = targetEmail.getAttribute("value");
@@ -127,7 +128,8 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	public void LoginBlankUsername()
     {
 		
-	 logger=reports.startTest("Login with blank Username ");	
+	 logger=reports.startTest("LoginBlankUsername");	
+	 logger.log(LogStatus.INFO, "Test cases started for blank user name validation");  
 	 //login button
 	 driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("Trinesis_123");
 	 driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
@@ -144,9 +146,11 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	public void LoginwithValidData()
 	{
 		
-		 logger=reports.startTest("Login with valida data in login");	
+		 logger=reports.startTest("LoginwithValidData");	
+		 logger.log(LogStatus.INFO, "Test cases started for valid data login");  
 		   driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("avinash@trinesis.com");
 			driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("Trinesis_12");
+			
 			//login button
 			driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
             System.out.println(driver.getTitle()); 
