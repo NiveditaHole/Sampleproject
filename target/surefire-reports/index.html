@@ -111,12 +111,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginBlankdata">LoginBlankdata</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginBlankUsername">LoginBlankUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginEmailID">LoginEmailID</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNG" title="Example.LoginFunctionality" class="method navigator-link" hash-for-method="LoginBlankdata">LoginBlankdata</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,16 +158,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginBlankdata">
-                  </a> <!-- LoginBlankdata -->
-                  <span class="method-name">LoginBlankdata</span>
+                  <a name="LoginBlankUsername">
+                  </a> <!-- LoginBlankUsername -->
+                  <span class="method-name">LoginBlankUsername</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginEmailID">
-                  </a> <!-- LoginEmailID -->
-                  <span class="method-name">LoginEmailID</span>
+                  <a name="LoginBlankdata">
+                  </a> <!-- LoginBlankdata -->
+                  <span class="method-name">LoginBlankdata</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -236,30 +236,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginEmailID')
+data.setCell(0, 1, 'LoginBlankUsername')
 data.setCell(0, 2, 'Example.LoginFunctionality')
-data.setCell(0, 3, 919);
+data.setCell(0, 3, 953);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginwithValidData')
 data.setCell(1, 2, 'Example.LoginFunctionality')
-data.setCell(1, 3, 489);
+data.setCell(1, 3, 518);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CheckValidEmailId')
+data.setCell(2, 1, 'CheckInvalidEmailId')
 data.setCell(2, 2, 'Example.LoginFunctionality')
-data.setCell(2, 3, 229);
+data.setCell(2, 3, 253);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CheckInvalidEmailId')
+data.setCell(3, 1, 'CheckValidEmailId')
 data.setCell(3, 2, 'Example.LoginFunctionality')
-data.setCell(3, 3, 222);
+data.setCell(3, 3, 240);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'LoginBlankdata')
 data.setCell(4, 2, 'Example.LoginFunctionality')
-data.setCell(4, 3, 123);
+data.setCell(4, 3, 148);
 window.suiteTableData['TestNG']= { tableData: data, tableDiv: 'times-div-TestNG'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-TestNG">
               </div> <!-- times-div-TestNG -->
             </div> <!-- times-div -->
@@ -292,67 +292,67 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckInvalidEmailId</span>
-                <span class="method-start">16481 ms</span>
+                <span class="method-start">9841 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=CheckInvalidEmailId status=SUCCESS method=LoginFunctionality.CheckInvalidEmailId()[...)</span>
-                <span class="method-start">16703 ms</span>
+                <span class="method-start">10094 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">16773 ms</span>
+                <span class="method-start">10830 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckValidEmailId</span>
-                <span class="method-start">30416 ms</span>
+                <span class="method-start">20927 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=CheckValidEmailId status=SUCCESS method=LoginFunctionality.CheckValidEmailId()[pri:...)</span>
-                <span class="method-start">30645 ms</span>
+                <span class="method-start">21167 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">30756 ms</span>
+                <span class="method-start">21809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginBlankUsername</span>
+                <span class="method-start">31155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=LoginBlankUsername status=SUCCESS method=LoginFunctionality.LoginBlankUsername()[pr...)</span>
+                <span class="method-start">32108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">32754 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginBlankdata</span>
-                <span class="method-start">43941 ms</span>
+                <span class="method-start">42164 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=LoginBlankdata status=SUCCESS method=LoginFunctionality.LoginBlankdata()[pri:0, ins...)</span>
-                <span class="method-start">44064 ms</span>
+                <span class="method-start">42312 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">44131 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">LoginEmailID</span>
-                <span class="method-start">56933 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=LoginEmailID status=SUCCESS method=LoginFunctionality.LoginEmailID()[pri:0, instanc...)</span>
-                <span class="method-start">57853 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Login</span>
-                <span class="method-start">57918 ms</span>
+                <span class="method-start">43018 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginwithValidData</span>
-                <span class="method-start">68687 ms</span>
+                <span class="method-start">54839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=LoginwithValidData status=SUCCESS method=LoginFunctionality.LoginwithValidData()[pr...)</span>
-                <span class="method-start">69176 ms</span>
+                <span class="method-start">55357 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">69263 ms</span>
+                <span class="method-start">56032 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

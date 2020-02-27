@@ -28,15 +28,17 @@ public class ExtendReportDemo {
 
     
 	
-    ExtentReports reports;
-    WebDriver driver;
-    ExtentTest logger;
+    public  ExtentReports reports;
+    public WebDriver driver;
+    public ExtentTest logger;
  
 
 	@BeforeSuite
-    public void setup() {
+    public void setup() 
+	{
 		// extent report
 		reports = new ExtentReports("./Reports/Test.html");
+		
 		//htmlreporter = new ExtentHtmlReporter(new File(("./Reports/test" +UtilitySS.getCurrentDateTime()   + ".html")));
 		
 	}
@@ -54,27 +56,31 @@ public class ExtendReportDemo {
 					MediaEntityBuilder.createScreenCaptureFromPath(UtilitySS.CaptureScreenshots(driver)).build());
 			test.fail(result.getThrowable());
 			*/
-			String screenshotpath=UtilitySS.CaptureScreenshots(driver);
-			String image= logger.addScreenCapture(screenshotpath);
+			String screenshotpath= UtilitySS.CaptureScreenshots(driver);
+	
+		    String image= logger.addScreenCapture(screenshotpath);
 			
 			logger.log(LogStatus.FAIL, "Test cases fail", image);
 
 			driver.close();
+			reports.flush();
 
 		}
-
+ 
 		else if (result.getStatus() == ITestResult.SUCCESS) {
 
-			String screenshotpath=UtilitySS.CaptureScreenshots(driver);
-			logger.log(LogStatus.PASS, "Test cases Pass", screenshotpath);
+			String screenshotpath= UtilitySS.CaptureScreenshots(driver);
+			 String image= logger.addScreenCapture(screenshotpath);
+			logger.log(LogStatus.PASS, "Test cases Pass", image);
 
 			driver.close();
+			reports.flush();
 
 		}
 		else if (result.getStatus() == ITestResult.SKIP) {
  
-			
-			//test.skip(result.getThrowable());
+			logger.log(LogStatus.SKIP, "Test case skipped");
+			reports.flush();
 
 		}
 	}
@@ -83,10 +89,12 @@ public class ExtendReportDemo {
 	@AfterSuite
 	public void tearDown()
 	{
+		reports.endTest(logger);
 		
-		reports.flush();
 	
-		//driver.quit();
+		
+	    // to display the url of the report
+		//driver.get("./Reports/Test.html");
 
 	}
 	

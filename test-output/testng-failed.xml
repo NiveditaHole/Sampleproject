@@ -11,8 +11,8 @@
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="getResult"/>
+          <include name="CheckInvalidEmailId"/>
           <include name="Login"/>
-          <include name="LoginBlankdata"/>
         </methods>
       </class> <!-- Example.LoginFunctionality -->
     </classes>

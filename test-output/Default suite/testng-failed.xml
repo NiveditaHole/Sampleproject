@@ -5,8 +5,10 @@
     <classes>
       <class name="Example.LoginFunctionality">
         <methods>
+          <include name="LoginwithValidData"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="LoginBlankUsername"/>
           <include name="getResult"/>
           <include name="Login"/>
           <include name="LoginBlankdata"/>

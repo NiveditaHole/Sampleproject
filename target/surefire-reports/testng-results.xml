@@ -2,24 +2,24 @@
 <testng-results total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-20T09:40:45Z" name="TestNG" finished-at="2020-02-20T09:41:54Z" duration-ms="69219">
+  <suite started-at="2020-02-27T10:36:53Z" name="TestNG" finished-at="2020-02-27T10:37:49Z" duration-ms="55985">
     <groups>
     </groups>
-    <test started-at="2020-02-20T09:40:45Z" name="TestNG" finished-at="2020-02-20T09:41:54Z" duration-ms="69219">
+    <test started-at="2020-02-27T10:36:53Z" name="TestNG" finished-at="2020-02-27T10:37:49Z" duration-ms="55985">
       <class name="Example.LoginFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:40:45Z" name="setup" finished-at="2020-02-20T04:40:45Z" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:06:53Z" name="setup" finished-at="2020-02-27T16:06:53Z" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:40:45Z" name="Login" finished-at="2020-02-20T04:41:01Z" duration-ms="16450" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:06:53Z" name="Login" finished-at="2020-02-27T16:07:03Z" duration-ms="9808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CheckInvalidEmailId()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:01Z" name="CheckInvalidEmailId" finished-at="2020-02-20T04:41:01Z" duration-ms="222" status="PASS">
+        <test-method signature="CheckInvalidEmailId()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:03Z" name="CheckInvalidEmailId" finished-at="2020-02-27T16:07:03Z" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckInvalidEmailId -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:01Z" name="getResult" finished-at="2020-02-20T04:41:01Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:03Z" name="getResult" finished-at="2020-02-27T16:07:04Z" duration-ms="735" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:01Z" name="Login" finished-at="2020-02-20T04:41:15Z" duration-ms="13643" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:04Z" name="Login" finished-at="2020-02-27T16:07:14Z" duration-ms="10097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CheckValidEmailId()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:15Z" name="CheckValidEmailId" finished-at="2020-02-20T04:41:15Z" duration-ms="229" status="PASS">
+        <test-method signature="CheckValidEmailId()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:14Z" name="CheckValidEmailId" finished-at="2020-02-27T16:07:14Z" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckValidEmailId -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:15Z" name="getResult" finished-at="2020-02-20T04:41:15Z" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:14Z" name="getResult" finished-at="2020-02-27T16:07:15Z" duration-ms="641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:15Z" name="Login" finished-at="2020-02-20T04:41:29Z" duration-ms="13185" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:15Z" name="Login" finished-at="2020-02-27T16:07:24Z" duration-ms="9346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="LoginBlankdata()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:29Z" name="LoginBlankdata" finished-at="2020-02-20T04:41:29Z" duration-ms="123" status="PASS">
+        <test-method signature="LoginBlankUsername()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:24Z" name="LoginBlankUsername" finished-at="2020-02-27T16:07:25Z" duration-ms="953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginBlankUsername -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:25Z" name="getResult" finished-at="2020-02-27T16:07:26Z" duration-ms="645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginBlankUsername status=SUCCESS method=LoginFunctionality.LoginBlankUsername()[pri:0, instance:Example.LoginFunctionality@563f38c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:26Z" name="Login" finished-at="2020-02-27T16:07:35Z" duration-ms="9410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="LoginBlankdata()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:35Z" name="LoginBlankdata" finished-at="2020-02-27T16:07:35Z" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginBlankdata -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:29Z" name="getResult" finished-at="2020-02-20T04:41:29Z" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:35Z" name="getResult" finished-at="2020-02-27T16:07:36Z" duration-ms="706" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,34 +87,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:29Z" name="Login" finished-at="2020-02-20T04:41:42Z" duration-ms="12802" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:36Z" name="Login" finished-at="2020-02-27T16:07:48Z" duration-ms="11820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="LoginEmailID()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:42Z" name="LoginEmailID" finished-at="2020-02-20T04:41:43Z" duration-ms="919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginEmailID -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:43Z" name="getResult" finished-at="2020-02-20T04:41:43Z" duration-ms="64" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginEmailID status=SUCCESS method=LoginFunctionality.LoginEmailID()[pri:0, instance:Example.LoginFunctionality@563f38c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:43Z" name="Login" finished-at="2020-02-20T04:41:53Z" duration-ms="10769" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="LoginwithValidData()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:53Z" name="LoginwithValidData" finished-at="2020-02-20T04:41:54Z" duration-ms="489" status="PASS">
+        <test-method signature="LoginwithValidData()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:48Z" name="LoginwithValidData" finished-at="2020-02-27T16:07:48Z" duration-ms="518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginwithValidData -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:54Z" name="getResult" finished-at="2020-02-20T04:41:54Z" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:48Z" name="getResult" finished-at="2020-02-27T16:07:49Z" duration-ms="655" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-20T04:41:54Z" name="tearDown" finished-at="2020-02-20T04:41:54Z" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Example.LoginFunctionality@563f38c4]" started-at="2020-02-27T16:07:49Z" name="tearDown" finished-at="2020-02-27T16:07:49Z" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

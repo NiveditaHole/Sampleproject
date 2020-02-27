@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,9 +31,11 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	@BeforeMethod
    public void Login() 
 	{
+		
 	System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
 	ChromeOptions option=new ChromeOptions();
-	option.setHeadless(true);
+	//option.setHeadless(true);
+	//option.setPageLoadStrategy(PageLoadStrategy.NONE);
     driver= new ChromeDriver(option);
     
     driver.manage().window().maximize();
@@ -47,11 +50,12 @@ public class LoginFunctionality extends ExtendReportDemo   {
     public void LoginBlankdata() throws InterruptedException
     {
 		
+		
         logger=reports.startTest("Login validation with blank data");
-        
+        logger.log(LogStatus.INFO, "Test cases started");   
 	   //login button
 		driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
-		logger.log(LogStatus.INFO, "Test case is running");
+		
 		
 		//to find the text is present when login button entered
 		WebElement validationALert = driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button"));
@@ -73,8 +77,9 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	{
 
 		 logger=reports.startTest("Login validation with email id data");
+		
     	driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("gfhfghgmail.com");
-	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
+	    WebElement targetEmail = driver.findElement(By.xpath("//*[@d=\"emailadd\"]"));
 	   
 	   
 	    String getValue = targetEmail.getAttribute("value");
