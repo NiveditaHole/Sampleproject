@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Example.LoginFunctionality">
+      <class name="GDRTabs.Users">
         <methods>
-          <include name="LoginwithValidData"/>
+          <include name="InviteUser"/>
+          <include name="FilterStatus"/>
           <include name="tearDown"/>
+          <include name="FilterRole"/>
           <include name="setup"/>
-          <include name="LoginBlankUsername"/>
           <include name="getResult"/>
-          <include name="Login"/>
-          <include name="LoginBlankdata"/>
         </methods>
-      </class> <!-- Example.LoginFunctionality -->
+      </class> <!-- GDRTabs.Users -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

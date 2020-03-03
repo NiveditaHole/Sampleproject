@@ -1,4 +1,4 @@
- package Example;
+ package GDRTabs;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.Assert;
@@ -36,6 +36,23 @@ public class ExtendReportDemo {
 	@BeforeSuite
     public void setup() 
 	{
+		
+		System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
+	    driver= new ChromeDriver();
+	   
+
+	    driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
+	    driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+	    //url 
+	    driver.get("https://qa-portal.goodr.co");	
+	    
+	    driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("avinash@trinesis.com");
+		driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("Trinesis_12");
+		//login button
+		driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
+		System.out.println("login successfully");
+		
 		// extent report
 		reports = new ExtentReports("./Reports/Test.html");
 		

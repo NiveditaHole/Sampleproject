@@ -1,4 +1,4 @@
-package Example;
+package GDRTabs;
 
 import org.testng.annotations.Test;
 
@@ -34,7 +34,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
 		
 	System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
 	ChromeOptions option=new ChromeOptions();
-	//option.setHeadless(true);
+	option.setHeadless(true);
 	//option.setPageLoadStrategy(PageLoadStrategy.NONE);
     driver= new ChromeDriver(option);
     

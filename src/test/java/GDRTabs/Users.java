@@ -1,4 +1,4 @@
-package Example;
+package GDRTabs;
 
 import org.testng.annotations.Test;
 
@@ -32,21 +32,15 @@ import org.testng.annotations.Test;
 import Library.UtilitySS;
 import Library.isEmailValid;
 
-public class Users extends ExtendReportDemo {
-
+public class Users extends ExtendReportDemo{
 
 	 
 	
+	  /*
 	@BeforeMethod
-    public void Login() 
+    public void setup() 
 	{
-		// extent report
 		
-	//test =reports.createTest("LoginTest");
-	//test.log(Status.INFO, "URL link is open");
-	
-    
-	
 	System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
     driver= new ChromeDriver();
    
@@ -63,30 +57,16 @@ public class Users extends ExtendReportDemo {
 	driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
 	System.out.println("login successfully");
 	}
+	8/
 	
 	
-	
-	 /*@BeforeClass
-	 
-	 public void UserTab()
-	{
-		
-	WebDriverWait wait= new WebDriverWait(driver, 100);	
-	//user link
-	WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
-	UserLink.click(); 
-	System.out.println("User link open successfully");
-	
-	}
-	
-	*/
+
     @Test 
     
 	public void Emailcheck() throws InterruptedException
 	{
-    	/*
-    	test =reports.createTest("Email validation ");
-    	test.log(Status.INFO, "Checking the email validation ");
+    	
+    	
     	WebDriverWait wait= new WebDriverWait(driver, 100);	
     	//user link
     	WebElement UserLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/users']")));
@@ -110,7 +90,7 @@ public class Users extends ExtendReportDemo {
 	        }
 		
 		
-		*/
+		
     }
 	
     /*
@@ -238,7 +218,7 @@ public class Users extends ExtendReportDemo {
 			
 		}
 
-		@Test(enabled=false) 
+		@Test
 		public void FilterStatus() throws InterruptedException
 		{
 			
