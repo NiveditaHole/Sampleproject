@@ -37,6 +37,11 @@ public class LoginFunctionality extends ExtendReportDemo   {
 	option.setHeadless(true);
 	//option.setPageLoadStrategy(PageLoadStrategy.NONE);
     driver= new ChromeDriver(option);
+   
+    //newly added 
+    option.setExperimentalOption("useAutomationExtension", false);
+    WebDriver driver = new ChromeDriver(option);
+   
     
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
