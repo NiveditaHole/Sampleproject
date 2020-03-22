@@ -34,14 +34,8 @@ public class LoginFunctionality extends ExtendReportDemo   {
 		
 	System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
 	ChromeOptions option=new ChromeOptions();
-	//option.setHeadless(true);
-	//option.setPageLoadStrategy(PageLoadStrategy.NONE);
+	
     driver= new ChromeDriver(option);
-   
-    //newly added 
-    //option.setExperimentalOption("useAutomationExtension", false);
-   // WebDriver driver = new ChromeDriver(option);
-   
     
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
@@ -84,7 +78,9 @@ public class LoginFunctionality extends ExtendReportDemo   {
 		 logger=reports.startTest("CheckInvalidEmailId");
 		  logger.log(LogStatus.INFO, "Test cases started for checking Invalid email id");  
     	driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("gfhfghgmail.com");
-	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
+    	
+    	//changing path for test fail- adding 1 to id
+	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id1=\"emailadd\"]"));
 	   
 	   
 	    String getValue = targetEmail.getAttribute("value");
