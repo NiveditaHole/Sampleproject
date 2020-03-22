@@ -8,7 +8,7 @@
     <classes>
      
       
-       <class name="Example.LoginFunctionality"/>
+       <class name="GDRTabs.LoginFunctionality"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

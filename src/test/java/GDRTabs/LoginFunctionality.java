@@ -34,13 +34,13 @@ public class LoginFunctionality extends ExtendReportDemo   {
 		
 	System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
 	ChromeOptions option=new ChromeOptions();
-	option.setHeadless(true);
+	//option.setHeadless(true);
 	//option.setPageLoadStrategy(PageLoadStrategy.NONE);
     driver= new ChromeDriver(option);
    
     //newly added 
-    option.setExperimentalOption("useAutomationExtension", false);
-    WebDriver driver = new ChromeDriver(option);
+    //option.setExperimentalOption("useAutomationExtension", false);
+   // WebDriver driver = new ChromeDriver(option);
    
     
     driver.manage().window().maximize();

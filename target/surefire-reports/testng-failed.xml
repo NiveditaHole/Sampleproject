@@ -6,15 +6,19 @@
   </listeners>
   <test parallel="none" name="TestNG(failed)">
     <classes>
-      <class name="Example.LoginFunctionality">
+      <class name="GDRTabs.LoginFunctionality">
         <methods>
+          <include name="LoginBlankdata"/>
+          <include name="CheckInvalidEmailId"/>
           <include name="tearDown"/>
+          <include name="LoginwithValidData"/>
+          <include name="Login"/>
           <include name="CheckValidEmailId"/>
           <include name="setup"/>
+          <include name="LoginBlankUsername"/>
           <include name="getResult"/>
-          <include name="Login"/>
         </methods>
-      </class> <!-- Example.LoginFunctionality -->
+      </class> <!-- GDRTabs.LoginFunctionality -->
     </classes>
   </test> <!-- TestNG(failed) -->
 </suite> <!-- Failed suite [TestNG] -->

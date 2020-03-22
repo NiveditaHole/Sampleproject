@@ -3,16 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GDRTabs.Users">
+      <class name="GDRTabs.LoginFunctionality">
         <methods>
-          <include name="InviteUser"/>
-          <include name="FilterStatus"/>
+          <include name="LoginBlankdata"/>
+          <include name="CheckInvalidEmailId"/>
           <include name="tearDown"/>
-          <include name="FilterRole"/>
+          <include name="LoginwithValidData"/>
+          <include name="Login"/>
+          <include name="CheckValidEmailId"/>
           <include name="setup"/>
+          <include name="LoginBlankUsername"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- GDRTabs.Users -->
+      </class> <!-- GDRTabs.LoginFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="55.792" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="62.015" tests="5" errors="0" skipped="0" failures="5">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/niveditah/Documents/MavenGDR/target/surefire/surefirebooter17262562946492252527.jar /home/niveditah/Documents/MavenGDR/target/surefire 2020-02-27T20-18-44_203-jvmRun1 surefire4442966866804433256tmp surefire_03983116421672860477tmp"/>
+    <property name="sun.java.command" value="/home/niveditah/Documents/MavenGDR/target/surefire/surefirebooter6689299377899735214.jar /home/niveditah/Documents/MavenGDR/target/surefire 2020-03-18T12-21-30_501-jvmRun1 surefire6243490404816954180tmp surefire_03266610635561674448tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/niveditah/Documents/MavenGDR/target/test-classes:/home/niveditah/Documents/MavenGDR/target/classes:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/niveditah/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/niveditah/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/niveditah/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/niveditah/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/niveditah/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/niveditah/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/niveditah/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/niveditah/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/niveditah/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/niveditah/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/niveditah/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/niveditah/.m2/repository/org/testng/testng/6.8/testng-6.8.jar:/home/niveditah/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/home/niveditah/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/home/niveditah/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:/home/niveditah/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar:/home/niveditah/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/home/niveditah/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar:/home/niveditah/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/home/niveditah/.m2/repository/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar:/home/niveditah/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:/home/niveditah/.m2/repository/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar:/home/niveditah/.m2/repository/org/uncommons/reportng/1.1.4/reportng-1.1.4.jar:/home/niveditah/.m2/repository/velocity/velocity/1.4/velocity-1.4.jar:/home/niveditah/.m2/repository/velocity/velocity-dep/1.4/velocity-dep-1.4.jar:/home/niveditah/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar:/home/niveditah/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/niveditah/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/niveditah/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/niveditah/.m2/repository/org/springframework/spring-web/2.0-m2/spring-web-2.0-m2.jar:/home/niveditah/.m2/repository/org/springframework/spring-context/2.0-m2/spring-context-2.0-m2.jar:/home/niveditah/.m2/repository/org/springframework/spring-aop/2.0-m2/spring-aop-2.0-m2.jar:/home/niveditah/.m2/repository/org/springframework/spring-beans/2.0-m2/spring-beans-2.0-m2.jar:/home/niveditah/.m2/repository/org/springframework/spring-core/2.0-m2/spring-core-2.0-m2.jar:/home/niveditah/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/home/niveditah/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/home/niveditah/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/home/niveditah/.m2/repository/javax/servlet/jstl/1.0/jstl-1.0.jar:/home/niveditah/.m2/repository/taglibs/standard/1.0.6/standard-1.0.6.jar:/home/niveditah/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M2/maven-surefire-plugin-3.0.0-M2.jar:/home/niveditah/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M2/maven-surefire-common-3.0.0-M2.jar:/home/niveditah/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M2/surefire-api-3.0.0-M2.jar:/home/niveditah/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M2/surefire-logger-api-3.0.0-M2.jar:/home/niveditah/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M2/surefire-booter-3.0.0-M2.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-core/3.0-alpha-2/maven-core-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-lifecycle/3.0-alpha-2/maven-lifecycle-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-reporting-api/3.0-alpha-2/maven-reporting-api-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-9/doxia-sink-api-1.0-alpha-9.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-model/3.0-alpha-2/maven-model-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-plugin-api/3.0-alpha-2/maven-plugin-api-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-beta-3.0.5/plexus-container-default-1.0-beta-3.0.5.jar:/home/niveditah/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar:/home/niveditah/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar:/home/niveditah/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar:/home/niveditah/.m2/repository/com/google/code/google-collections/google-collect/snapshot-20080530/google-collect-snapshot-20080530.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-project/3.0-alpha-2/maven-project-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-project-builder/3.0-alpha-2/maven-project-builder-3.0-alpha-2.jar:/home/niveditah/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-6/plexus-interactivity-api-1.0-alpha-6.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-classworlds/1.3/plexus-classworlds-1.3.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.0-beta-3.0.5/plexus-component-annotations-1.0-beta-3.0.5.jar:/home/niveditah/.m2/repository/org/sonatype/plexus/plexus-plugin-manager/1.0-alpha-1/plexus-plugin-manager-1.0-alpha-1.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-plexus/1.0.0-alpha-2/mercury-plexus-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-repo-remote-m2/1.0.0-alpha-2/mercury-repo-remote-m2-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-repo-api/1.0.0-alpha-2/mercury-repo-api-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-transport-api/1.0.0-alpha-2/mercury-transport-api-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-crypto-api/1.0.0-alpha-2/mercury-crypto-api-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-transport-http/1.0.0-alpha-2/mercury-transport-http-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/mortbay/jetty/jetty-client/6.1.12/jetty-client-6.1.12.jar:/home/niveditah/.m2/repository/org/mortbay/jetty/jetty-sslengine/6.1.12/jetty-sslengine-6.1.12.jar:/home/niveditah/.m2/repository/org/mortbay/jetty/jetty/6.1.12/jetty-6.1.12.jar:/home/niveditah/.m2/repository/org/mortbay/jetty/jetty-util/6.1.12/jetty-util-6.1.12.jar:/home/niveditah/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.12/servlet-api-2.5-6.1.12.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-crypto-basic/1.0.0-alpha-2/mercury-crypto-basic-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/home/niveditah/.m2/repository/bouncycastle/bcpg-jdk15/140/bcpg-jdk15-140.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-md-shared/1.0.0-alpha-2/mercury-md-shared-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-util/1.0.0-alpha-2/mercury-util-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-repo-local-m2/1.0.0-alpha-2/mercury-repo-local-m2-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-repo-virtual/1.0.0-alpha-2/mercury-repo-virtual-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-repo-cache-fs/1.0.0-alpha-2/mercury-repo-cache-fs-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-md-sat/1.0.0-alpha-2/mercury-md-sat-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/sat4j/org.sat4j.core/2.0.4/org.sat4j.core-2.0.4.jar:/home/niveditah/.m2/repository/org/sat4j/org.sat4j.pb/2.0.4/org.sat4j.pb-2.0.4.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-event/1.0.0-alpha-2/mercury-event-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-logging/1.0.0-alpha-2/mercury-logging-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-lang/1.1/plexus-lang-1.1.jar:/home/niveditah/.m2/repository/org/slf4j/slf4j-jdk14/1.5.3/slf4j-jdk14-1.5.3.jar:/home/niveditah/.m2/repository/org/slf4j/slf4j-api/1.5.3/slf4j-api-1.5.3.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-mercury/3.0-alpha-2/maven-mercury-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-artifact/1.0.0-alpha-2/mercury-artifact-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/mercury/mercury-external/1.0.0-alpha-2/mercury-external-1.0.0-alpha-2.jar:/home/niveditah/.m2/repository/org/sonatype/spice/model-builder/1.3/model-builder-1.3.jar:/home/niveditah/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/niveditah/.m2/repository/org/apache/maven/maven-compat/3.0-alpha-2/maven-compat-3.0-alpha-2.jar:/home/niveditah/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-4/wagon-provider-api-1.0-beta-4.jar:/home/niveditah/.m2/repository/org/codehaus/plexus/plexus-java/1.0.1/plexus-java-1.0.1.jar:/home/niveditah/.m2/repository/org/ow2/asm/asm/7.0-beta/asm-7.0-beta.jar:/home/niveditah/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:/home/niveditah/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/niveditah/Documents/MavenGDR/target/surefire/surefirebooter17262562946492252527.jar"/>
+    <property name="surefire.real.class.path" value="/home/niveditah/Documents/MavenGDR/target/surefire/surefirebooter6689299377899735214.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.6+10-post-Ubuntu-1ubuntu118.04.1"/>
     <property name="user.name" value="niveditah"/>
@@ -57,77 +57,408 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="CheckInvalidEmailId" classname="Example.LoginFunctionality" time="0.231"/>
-  <testcase name="CheckValidEmailId" classname="Example.LoginFunctionality" time="0.048">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;emaadd&quot;]&quot;}&#10;  (Session info: chrome=80.0.3987.87)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-88-generic&apos;, java.version: &apos;11.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.D4DLBX}, goog:chromeOptions: {debuggerAddress: localhost:43615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6cabd7ea6c6d9f035c86bec373605496&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;emaadd&quot;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emaadd"]"}
-  (Session info: chrome=80.0.3987.87)
+  <testcase name="CheckInvalidEmailId" classname="GDRTabs.LoginFunctionality" time="0.04">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;emailadd&quot;]&quot;}&#10;  (Session info: headless chrome=80.0.3987.87)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-88-generic&apos;, java.version: &apos;11.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.rEvuV3}, goog:chromeOptions: {debuggerAddress: localhost:35573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 82733ecacc8baa580734da8f9d782c34&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;emailadd&quot;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emailadd"]"}
+  (Session info: headless chrome=80.0.3987.87)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.D4DLBX}, goog:chromeOptions: {debuggerAddress: localhost:43615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6cabd7ea6c6d9f035c86bec373605496
-*** Element info: {Using=xpath, value=//*[@id="emaadd"]}
-	at Example.LoginFunctionality.CheckValidEmailId(LoginFunctionality.java:108)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.rEvuV3}, goog:chromeOptions: {debuggerAddress: localhost:35573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82733ecacc8baa580734da8f9d782c34
+*** Element info: {Using=xpath, value=//*[@id="emailadd"]}
+	at GDRTabs.LoginFunctionality.CheckInvalidEmailId(LoginFunctionality.java:86)
+</failure>
+    <system-out><![CDATA[login successfully
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 18635
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:21:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584514294.310][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514294.468][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514294.569][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514294.671][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514294.835][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514294.936][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.038][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.146][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.247][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.348][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.450][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.552][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.654][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.758][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.859][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514295.960][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.100][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.201][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.303][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.408][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.510][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.612][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.714][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514296.816][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.031][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.133][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.235][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.337][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.439][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.540][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.642][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.743][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514297.846][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514298.355][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514301.952][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.054][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.156][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.272][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.373][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.475][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.576][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.684][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.793][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514302.894][SEVERE]: Timed out receiving message from renderer: 0.100
+Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 19395
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:21:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 5724
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:21:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584514305.054][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514305.223][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514305.325][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514305.427][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514305.625][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514305.726][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514305.828][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514305.929][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.031][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.132][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.233][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.335][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.437][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.667][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.769][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.871][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514306.974][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.076][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.184][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.286][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.389][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.491][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.593][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.694][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.802][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514307.903][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.005][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.106][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.207][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.309][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.410][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.511][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.613][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.714][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514308.819][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514309.264][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514312.412][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514312.513][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514312.615][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514312.716][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514312.818][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514312.920][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514313.021][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514313.122][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514313.224][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514313.325][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514313.426][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514313.528][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514313.629][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="CheckValidEmailId" classname="GDRTabs.LoginFunctionality" time="0.024">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;emailadd&quot;]&quot;}&#10;  (Session info: headless chrome=80.0.3987.87)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-88-generic&apos;, java.version: &apos;11.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.qazq0S}, goog:chromeOptions: {debuggerAddress: localhost:41987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 786e6c7fbcb8b527c91081eb4252faa0&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;emailadd&quot;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emailadd"]"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.qazq0S}, goog:chromeOptions: {debuggerAddress: localhost:41987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 786e6c7fbcb8b527c91081eb4252faa0
+*** Element info: {Using=xpath, value=//*[@id="emailadd"]}
+	at GDRTabs.LoginFunctionality.CheckValidEmailId(LoginFunctionality.java:114)
 </failure>
     <system-out><![CDATA[screenshot captured
 ]]></system-out>
     <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
-Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 26435
+Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 11033
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Feb 27, 2020 8:18:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 18, 2020 12:21:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1582814938.640][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814938.741][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814938.843][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814938.946][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.168][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.270][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.373][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.474][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.575][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.676][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.778][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814939.981][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.082][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.185][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.286][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.387][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.579][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.681][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.782][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.884][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814940.985][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.087][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.189][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.291][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.395][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.497][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.599][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.700][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.802][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814941.903][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814942.004][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814942.106][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814942.207][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814942.665][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.210][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.311][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.413][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.514][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.615][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.716][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.818][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814946.919][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814947.020][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814947.121][SEVERE]: Timed out receiving message from renderer: 0.100
-[1582814947.223][SEVERE]: Timed out receiving message from renderer: 0.100
+Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 18449
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:21:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584514315.338][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514315.505][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514315.606][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514315.708][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514315.896][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514315.997][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.098][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.232][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.334][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.437][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.541][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.643][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.746][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.847][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514316.948][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.151][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.265][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.366][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.472][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.573][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.675][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.776][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.878][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514317.981][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514318.082][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514318.183][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514318.284][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514318.386][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514318.488][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514318.941][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.142][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.243][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.345][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.449][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.551][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.652][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.753][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.855][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514322.957][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514323.059][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
   </testcase>
-  <testcase name="LoginBlankUsername" classname="Example.LoginFunctionality" time="0.902"/>
-  <testcase name="LoginBlankdata" classname="Example.LoginFunctionality" time="0.133"/>
-  <testcase name="LoginwithValidData" classname="Example.LoginFunctionality" time="0.55"/>
+  <testcase name="LoginBlankUsername" classname="GDRTabs.LoginFunctionality" time="0.02">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;mat-input-1&quot;]&quot;}&#10;  (Session info: headless chrome=80.0.3987.87)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-88-generic&apos;, java.version: &apos;11.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.Y7BtYu}, goog:chromeOptions: {debuggerAddress: localhost:35445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 16b3f2eab660021f20d4882c716a50cf&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;mat-input-1&quot;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="mat-input-1"]"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.Y7BtYu}, goog:chromeOptions: {debuggerAddress: localhost:35445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 16b3f2eab660021f20d4882c716a50cf
+*** Element info: {Using=xpath, value=//*[@id="mat-input-1"]}
+	at GDRTabs.LoginFunctionality.LoginBlankUsername(LoginFunctionality.java:140)
+</failure>
+    <system-out><![CDATA[screenshot captured
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 8147
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:22:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 28867
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:22:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584514324.531][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514324.703][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514324.804][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514324.906][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.085][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.187][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.288][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.423][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.524][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.625][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.727][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.828][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514325.930][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.035][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.136][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.351][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.467][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.568][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.670][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.771][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.872][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514326.973][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.075][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.176][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.277][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.378][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.479][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.580][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.682][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.783][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514327.885][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514328.376][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514331.819][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514331.920][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.022][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.124][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.226][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.328][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.430][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.532][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.633][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514332.735][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="LoginBlankdata" classname="GDRTabs.LoginFunctionality" time="0.025">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button&quot;}&#10;  (Session info: headless chrome=80.0.3987.87)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-88-generic&apos;, java.version: &apos;11.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.S6cuNJ}, goog:chromeOptions: {debuggerAddress: localhost:36037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 8221ec2db5dff0107ca6762271c9fa19&#10;*** Element info: {Using=xpath, value=/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.S6cuNJ}, goog:chromeOptions: {debuggerAddress: localhost:36037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8221ec2db5dff0107ca6762271c9fa19
+*** Element info: {Using=xpath, value=/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button}
+	at GDRTabs.LoginFunctionality.LoginBlankdata(LoginFunctionality.java:62)
+</failure>
+    <system-out><![CDATA[screenshot captured
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 21546
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:22:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 4615
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:22:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584514334.237][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514334.396][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514334.497][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514334.599][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514334.795][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514334.896][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514334.998][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.127][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.228][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.329][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.430][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.532][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.633][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.735][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514335.836][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.153][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.254][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.355][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.457][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.558][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.659][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.761][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.863][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514336.964][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.066][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.167][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.268][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.369][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.471][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.572][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.673][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.775][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.876][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514337.977][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514338.410][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514341.752][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514341.853][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514341.955][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.056][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.157][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.258][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.360][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.461][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.563][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.664][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514342.765][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="LoginwithValidData" classname="GDRTabs.LoginFunctionality" time="0.026">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;emailadd&quot;]&quot;}&#10;  (Session info: headless chrome=80.0.3987.87)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;trinesis-pc19&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-88-generic&apos;, java.version: &apos;11.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.5DQ9k5}, goog:chromeOptions: {debuggerAddress: localhost:33701}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 669822fa69df983f5b9c424251a9f88e&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;emailadd&quot;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emailadd"]"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.5DQ9k5}, goog:chromeOptions: {debuggerAddress: localhost:33701}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 669822fa69df983f5b9c424251a9f88e
+*** Element info: {Using=xpath, value=//*[@id="emailadd"]}
+	at GDRTabs.LoginFunctionality.LoginwithValidData(LoginFunctionality.java:157)
+</failure>
+    <system-out><![CDATA[screenshot captured
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 10549
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:22:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}) on port 11820
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 18, 2020 12:22:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584514344.723][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514344.824][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514344.975][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.076][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.287][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.388][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.490][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.615][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.716][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.818][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514345.919][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.021][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.122][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.224][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.325][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.534][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.682][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.784][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.885][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514346.987][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.088][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.189][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.291][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.392][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.494][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.595][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.697][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.799][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514347.901][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514348.002][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514348.448][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.087][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.188][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.291][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.392][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.493][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.595][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.697][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.798][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514352.899][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584514353.001][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
 </testsuite>

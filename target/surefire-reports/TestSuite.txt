@@ -1,17 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.792 s <<< FAILURE! - in TestSuite
-CheckValidEmailId(Example.LoginFunctionality)  Time elapsed: 0.048 s  <<< FAILURE!
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 62.015 s <<< FAILURE! - in TestSuite
+CheckInvalidEmailId(GDRTabs.LoginFunctionality)  Time elapsed: 0.04 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emaadd"]"}
-  (Session info: chrome=80.0.3987.87)
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emailadd"]"}
+  (Session info: headless chrome=80.0.3987.87)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.D4DLBX}, goog:chromeOptions: {debuggerAddress: localhost:43615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6cabd7ea6c6d9f035c86bec373605496
-*** Element info: {Using=xpath, value=//*[@id="emaadd"]}
-	at Example.LoginFunctionality.CheckValidEmailId(LoginFunctionality.java:108)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.rEvuV3}, goog:chromeOptions: {debuggerAddress: localhost:35573}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82733ecacc8baa580734da8f9d782c34
+*** Element info: {Using=xpath, value=//*[@id="emailadd"]}
+	at GDRTabs.LoginFunctionality.CheckInvalidEmailId(LoginFunctionality.java:86)
+
+CheckValidEmailId(GDRTabs.LoginFunctionality)  Time elapsed: 0.024 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emailadd"]"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.qazq0S}, goog:chromeOptions: {debuggerAddress: localhost:41987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 786e6c7fbcb8b527c91081eb4252faa0
+*** Element info: {Using=xpath, value=//*[@id="emailadd"]}
+	at GDRTabs.LoginFunctionality.CheckValidEmailId(LoginFunctionality.java:114)
+
+LoginBlankUsername(GDRTabs.LoginFunctionality)  Time elapsed: 0.02 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="mat-input-1"]"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.Y7BtYu}, goog:chromeOptions: {debuggerAddress: localhost:35445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 16b3f2eab660021f20d4882c716a50cf
+*** Element info: {Using=xpath, value=//*[@id="mat-input-1"]}
+	at GDRTabs.LoginFunctionality.LoginBlankUsername(LoginFunctionality.java:140)
+
+LoginBlankdata(GDRTabs.LoginFunctionality)  Time elapsed: 0.025 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.S6cuNJ}, goog:chromeOptions: {debuggerAddress: localhost:36037}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8221ec2db5dff0107ca6762271c9fa19
+*** Element info: {Using=xpath, value=/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button}
+	at GDRTabs.LoginFunctionality.LoginBlankdata(LoginFunctionality.java:62)
+
+LoginwithValidData(GDRTabs.LoginFunctionality)  Time elapsed: 0.026 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="emailadd"]"}
+  (Session info: headless chrome=80.0.3987.87)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'trinesis-pc19', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-88-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.87, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /tmp/.com.google.Chrome.5DQ9k5}, goog:chromeOptions: {debuggerAddress: localhost:33701}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 669822fa69df983f5b9c424251a9f88e
+*** Element info: {Using=xpath, value=//*[@id="emailadd"]}
+	at GDRTabs.LoginFunctionality.LoginwithValidData(LoginFunctionality.java:157)
 
