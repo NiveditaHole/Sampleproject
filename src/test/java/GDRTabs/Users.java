@@ -23,6 +23,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,17 +35,15 @@ import Library.isEmailValid;
 
 public class Users extends ExtendReportDemo{
 
-	 
 	
-	  /*
 	@BeforeMethod
     public void setup() 
 	{
 		
 	System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
-    driver= new ChromeDriver();
-   
-
+    ChromeOptions option=new ChromeOptions();
+	
+    driver= new ChromeDriver(option);
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
     driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
@@ -52,12 +51,12 @@ public class Users extends ExtendReportDemo{
     driver.get("https://qa-portal.goodr.co");	
     
     driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("avinash@trinesis.com");
-	driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("Trinesis_12");
+	driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("Trinesis_123");
 	//login button
 	driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
 	System.out.println("login successfully");
 	}
-	8/
+	
 	
 	
 
@@ -185,7 +184,7 @@ public class Users extends ExtendReportDemo{
 		
     	}
 		
-		@Test
+		@Test(enabled=false) 
 	
 		public void FilterRole() throws InterruptedException
 		{
@@ -218,7 +217,7 @@ public class Users extends ExtendReportDemo{
 			
 		}
 
-		@Test
+		@Test(enabled=false) 
 		public void FilterStatus() throws InterruptedException
 		{
 			

@@ -80,7 +80,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
     	driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("gfhfghgmail.com");
     	
     	//changing path for test fail- adding 1 to id
-	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id1=\"emailadd\"]"));
+	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
 	   
 	   
 	    String getValue = targetEmail.getAttribute("value");
@@ -108,7 +108,7 @@ public class LoginFunctionality extends ExtendReportDemo   {
 		logger.log(LogStatus.INFO, "Test cases started for checking valid email id");  
 		//driver.findElement(By.xpath("//*[@id=\"emaadd\"]")).sendKeys("abc@gmail.com");
     	driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("abc@gmail.com");
-	    WebElement targetEmail = driver.findElement(By.xpath("//*[@id=\"emailadd\"]"));
+	    WebElement targetEmail = driver.findElement(By.xpath("//*MavenGDRproject/[@id=\"emailadd\"]"));
 	    String getValue = targetEmail.getAttribute("value");
 		System.out.println("email entered :" +getValue);
 		
