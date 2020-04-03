@@ -37,6 +37,8 @@ public class ExtendReportDemo {
     public void setup() 
 	{
 		
+		/*
+		
 		System.setProperty("webdriver.chrome.driver", "/home/niveditah/Downloads/chrome80/chromedriver");
 	    driver= new ChromeDriver();
 	   
@@ -49,10 +51,10 @@ public class ExtendReportDemo {
 	    
 	    driver.findElement(By.xpath("//*[@id=\"emailadd\"]")).sendKeys("avinash@trinesis.com");
 		driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("Trinesis_12");
-		//login button
+		login button
 		driver.findElement(By.xpath("/html/body/app-root/app-login/section/div/div[2]/form/mat-card-actions/button")).click();
-		System.out.println("login successfully");
-		
+	     System.out.println("login successfully");
+		*/
 		// extent report
 		reports = new ExtentReports("./Reports/Test.html");
 		
@@ -78,7 +80,7 @@ public class ExtendReportDemo {
 		    String image= logger.addScreenCapture(screenshotpath);
 			
 			logger.log(LogStatus.FAIL, "Test cases fail", image);
-
+             logger.log(LogStatus.FAIL, result.getThrowable());
 			driver.close();
 			reports.flush();
 
