@@ -1,0 +1,13 @@
+Suggessions on Functionality
+Usability
+UI Aesthetics
+
+1.by default one connection type should be selected 
+3.View Photo Here and View Signature Here options-should be properly aligned after adding ading photo or signature it should not be displayed before adding these details as it misleads the user understanding
+4. If the title is mandatory first option should be removed which is blank 
+3.Capitalization should be followed all over the page ex. some words are in capital some words are following Intial letter in uppercase and rest in lowercase
+4.terms and condition contents location should be peroper which should clearly understand by the user
+5.Theme colur for the supply address should be different layout and look a d fill should be changed
+6. Uploading file should also support png file format
+7. There should be no empty space at the botton of the registation form
+8.Font style should be cosisent all over the page
