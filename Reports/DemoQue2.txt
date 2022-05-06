@@ -21,3 +21,4 @@ Verify email conetents when user successfully registered
 Verify click on 'Confirm your account' button in the email received 
 Verify theat within specified duration link has to be clicked to confirm the account
 Verify adding mutliple records in the registartion forms
+Verify double click on 'Get Started' button, it should craete only one record, multiple click should be restricted.
