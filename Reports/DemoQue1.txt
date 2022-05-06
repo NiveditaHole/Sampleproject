@@ -1,38 +1,37 @@
 Test Scenarios for Front End:
 
 
-Verify Add item button 
-Verify Add button click 
+Verify Add item button click
 Verify click on add item without ading mandatory fields
 Verify click on add item with no data in the fields
 verify adding item with all required(name,description,price) fields
-verify success message after adding an item successfully
+verify success message after adding an item to the inventory
 Verify validation present on item name field
 Verify validation present on item price field
 Verify validation present on item description field
 Verify upload image option functionality 
-verify either it is allowing browsing from your computer
-verify how many iamge we can upload for each item if only 1 then after each retake previous one should be deleted
-verify if multiple images can be upload 
-verify cross button for deleting iamges while adding to the inventory
+verify either it is allowing browsing from your computer or any other external sources
+verify if each item only allow 1 image or mutliple images can be upload
+verify cross button for deleting iamges while adding to the inventory if allowing multiple images
 verify retake/delete option for image upload
-Verify the right images sixe are shown in a good manner with orientation
+Verify the right images size are shown in a good manner with orientation
 Verify list of the items with Delete options
 Verify delete button click, item should be removed from the list
 Verify click on the item from the list 
 Verify new page after clicking on item from the list
 Verify item details when page is open 
-Verify image present or not in the item details
-Verify item information is present which is added(name, desc, price and image if uploaded)
+Verify image presentaion with the details if image present in the item details
+Verify item information is correct as added(name, desc, price and image if uploaded)
 Verify new page open after clicking on item should only contain specific item details
 verify navigating to the all items data from speicif item detail page
-verify navigation presence between each page
+verify navigation present between each page
 Verify correctness/acuracy of the page while scrolling over the page horizontally
 Verify correctness/acuracy of the page while scrolling over the page vertically
 Verify spell check is right on alert, error message and popup and all over the application
 Verfify that font size and types ought to be flexible according to the scren size
 Verify item details layout when orientation is horizontal
 Verify item details layout when orientation is vertical
+
 
 Verify click on Add item, list of the inventory should be reload with newly added item
 verify click on delete button in the inventory, item list should load after removing an selected item
