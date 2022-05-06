@@ -1,0 +1,23 @@
+Que 2. Automation Test Scenarios
+
+Verify either we are able to access the URL link or it is broken
+Verify page title
+Verify minimize and maximizing on the page
+Verify Selecting value from Language dropdown English to 'Dutch' and vice versa
+Verify Default value for language dropdown
+Verify adding diferent data type values in the fullname textbox
+Verify adding diferent data type values in the organization textbox
+Verify entering incorrect email(Invalid) as input value in the email textbox(abc@)
+Verify entering incorrect email(Valid) as input value in the email textbox(abc@gmail.com)
+Verify entering repeated email in the registartion form multiple times either it allow or restrict the same email id
+Verify document open in new tab when clicked on Terms and Condtions link
+Verify label of terms and conditons document
+Verify clicking on checkbox of terms and conditions 
+Verify click on 'Get started' button is disabled till all the required information is filled
+Verify 'Get Started' button is disabled if the email format is incorrect 
+Verify success message text when click on Get started button
+Verify email recieved on the email id given for registartion
+Verify email conetents when user successfully registered
+Verify click on 'Confirm your account' button in the email received 
+Verify theat within specified duration link has to be clicked to confirm the account
+Verify adding mutliple records in the registartion forms
